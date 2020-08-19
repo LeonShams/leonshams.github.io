@@ -1,25 +1,6 @@
   <!DOCTYPE html>
   <html>
     <style>
-
-      .trans {
-          -webkit-transition: background 1s, border-radius 1s;
-          transition: background 1s, border-radius 1s;
-      }
-
-      .container div {
-          min-width: 256px;
-          min-height: 256px;
-          background: #adf;
-          border-radius: 15px;
-      }
-
-      .circle:hover {
-          background: #fda;
-          border-radius: 128px;
-      }
-
-      
       body {
         background-color: black !important;
       }
@@ -48,6 +29,11 @@
         text-align: center;
         display: flex;
         justify-content: space-around;
+      }
+      
+      nav ul trans {
+          -webkit-transition: background 0.3s, border-radius 0.3s;
+          transition: background 0.3s, border-radius 0.3s;
       }
       
       nav ul a:hover {
@@ -90,8 +76,8 @@
           <a href="/" class="brand-logo"><img src="images/logo.png" width="123" height="65" class="left_logo_pad"></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
              <li class="trans"><a href="/">1</a></li>
-            <li><a href="/">2</a></li>
-            <li><a href="/">3</a></li>
+            <li class="trans"><a href="/">2</a></li>
+            <li class="trans"><a href="/">3</a></li>
           </ul>
         </div>
       </nav>
