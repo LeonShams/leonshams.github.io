@@ -1,5 +1,49 @@
   <!DOCTYPE html>
   <html>
+    <style>
+    nav {
+      height: 90px;
+    }
+
+    nav ul li,
+    nav ul li a,
+    .brand-logo {
+      line-height: 90px;
+      font-size: 30px;
+      padding: 0px 100px 0px 100px;
+      color: black;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-weight: 700;
+    }
+
+    a.brand-logo {
+      padding-left: 120px;
+    }
+
+    nav.nav-center ul {
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+
+    }
+    nav.nav-center ul li {
+      display: inline;
+    }
+    nav.nav-center ul li a {
+      display: inline-block;
+
+    }
+
+    nav ul a:hover {
+       background-color: rgba(0, 0, 0, 0) !important;
+    }
+
+    nav ul li:hover {
+      background-color: rgba(0, 0, 0, 0.2) !important;
+    }
+
+  </style>
+    
     <head>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,7 +57,7 @@
     <body>
       <nav>
         <div class="nav-wrapper">
-          <a href="images/youtube-logo.png" class="brand-logo"></a>
+          <a href="/" class="brand-logo"><img src="images/youtube-logo.png" width="90" height="90"></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="sass.html">1</a></li>
             <li><a href="badges.html">2</a></li>
