@@ -1,2 +1,2 @@
 # leonshams.github.io
-Source code for my website.
+https://leonshams.github.io/ is a public website created by Leon Shams.
