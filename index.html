@@ -31,17 +31,17 @@
         justify-content: space-around;
       }
       
-      nav.clearfix:before,
-      nav.clearfix:after {
+      .clearfix:before,
+      .clearfix:after {
           content: '';
           display: table;
       }
 
-      nav.cleaffix:after {
+      .cleaffix:after {
           clear: both;
       }
 
-      nav ul.trans {
+      .trans {
           -webkit-transition: background 1s, border-radius 1s;
           transition: background 1s, border-radius 1s;
       }
@@ -51,6 +51,11 @@
       }
 
       nav ul li:hover {
+        background-color: rgba(0, 0, 0, 0.2) !important;
+        border-radius: 15px;
+      }
+      
+      .brand-logo:hover {
         background-color: rgba(0, 0, 0, 0.2) !important;
         border-radius: 15px;
       }
