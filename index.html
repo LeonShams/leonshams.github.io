@@ -1,6 +1,78 @@
   <!DOCTYPE html>
   <html>
     <style>
+      
+      .clearfix:before,
+      .clearfix:after {
+          content: '';
+          display: table;
+      }
+
+      .cleaffix:after {
+          clear: both;
+      }
+
+      .left {
+          float: left;
+      }
+
+      .trans {
+          -webkit-transition: background 1s, border-radius 1s;
+          transition: background 1s, border-radius 1s;
+      }
+
+      .container div {
+          min-width: 256px;
+          min-height: 256px;
+          background: #adf;
+          border-radius: 128px;
+      }
+
+      .container {
+          max-width: 512px;
+      }
+
+      .clover:nth-child(1) {
+          border-bottom-right-radius: 0px;
+      }
+      .clover:nth-child(2) {
+          border-bottom-left-radius: 0px;
+      }
+      .clover:nth-child(3) {
+          border-top-right-radius: 0px;
+      }
+      .clover:nth-child(4) {
+          border-top-left-radius: 0px;
+      }
+
+      .circle:hover,
+      .clover:hover {
+          background: #fda;
+      }
+
+      .circle:hover {
+          border-radius: 0px;
+      }
+
+      .clover:hover:nth-child(1) {
+          border-bottom-right-radius: 128px;
+          border-top-left-radius: 0px;
+      }
+      .clover:hover:nth-child(2) {
+          border-bottom-left-radius: 128px;
+          border-top-right-radius: 0px;
+      }
+      .clover:hover:nth-child(3) {
+          border-top-right-radius: 128px;
+          border-bottom-left-radius: 0px;
+      }
+      .clover:hover:nth-child(4) {
+          border-top-left-radius: 128px;
+          border-bottom-right-radius: 0px;
+      }
+
+      
+      
       p {
         margin-left: 50px;
         margin-right: 50px;
@@ -24,21 +96,6 @@
         text-align: center;
         display: flex;
         justify-content: space-around;
-      }
-      
-      .clearfix:before,
-      .clearfix:after {
-          content: '';
-          display: table;
-      }
-
-      .cleaffix:after {
-          clear: both;
-      }
-
-      nav ul trans {
-          -webkit-transition: background 1s, border-radius 1s;
-          transition: background 1s, border-radius 1s;
       }
       
       nav ul a:hover {
@@ -77,15 +134,28 @@
 
     <body>
       <nav>
-        <div class="clearfix nav-wrapper">
+        <div class="nav-wrapper">
           <a href="/" class="brand-logo"><img src="images/logo.png" width="123" height="65" class="left_logo_pad"></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down trans">
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="/">1</a></li>
             <li><a href="/">2</a></li>
             <li><a href="/">3</a></li>
           </ul>
         </div>
       </nav>
+      
+      <div class="clearfix container left">
+          <div class="circle trans left"></div>
+          <div class="circle trans left"></div>
+          <div class="circle trans left"></div>
+          <div class="circle trans left"></div>
+      </div>
+      <div class="clearfix container left">
+          <div class="clover trans left"></div>
+          <div class="clover trans left"></div>
+          <div class="clover trans left"></div>
+          <div class="clover trans left"></div>
+      </div>
       
       <h1><p>Site under construction</p></h1>
 
