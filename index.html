@@ -106,7 +106,7 @@
       <nav>
         <div class="nav-wrapper">
           <a href="/" class="brand-logo hover_circle trans">
-            <img src="images/logo.png" width="123" height="65" class="logo_pos" id="img">
+            <img id="img" src="images/logo.png" width="123" height="65" class="logo_pos">
           </a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li class="trans"><a href="/">Resume</a></li>
@@ -120,7 +120,7 @@
       <a href="https://www.youtube.com/channel/UCxwogGpWjvuR4A26AnDkCwQ">
         <div class="container center">
           <div class="circle trans center">
-            <img class="center" width="426" height="240" src='https://1000logos.net/wp-content/uploads/2017/05/logo-youtube.png' id="img">
+            <img id="img" class="center" width="426" height="240" src='https://1000logos.net/wp-content/uploads/2017/05/logo-youtube.png'>
           </div>
         </div>
       </a>
@@ -129,7 +129,7 @@
       <h1><p class="center">Site under construction</p></h1>
       
       <script>
-        document.getElementById('img').ondragstart = function () { return false; };
+        document.getElementById('img').setAttribute('draggable', false);
       </script>
 
       <!--JavaScript at end of body for optimized loading-->
