@@ -84,17 +84,17 @@
       object-fit: cover;
     }
     
-    .crop {
+    .crop img {
       width: 2160px;
       height: 2160px;
-      overflow: hidden;
+      /* -(height change)/2 0 0 -(width change)/2 */
+      margin: 0px 0px 0px 0px;
     }
-
-    .crop img {
+    
+    .crop {
       width: 65px;
       height: 65px;
-      /* -(height change)/2 0 0 -(width change)/2 */
-      margin: 0 0 0 -58px;
+      overflow: hidden;
     }
     
     .crop_sidenav_background {
