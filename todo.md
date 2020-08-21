@@ -9,3 +9,5 @@
 
 # Support
 - [ ] Dropdown menu navbar for smaller displays and phones
+- [ ] Allow button images to shrink more for phones
+- [ ] Force navbar min size to prevent weird animations on phones
