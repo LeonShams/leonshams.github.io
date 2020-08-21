@@ -66,9 +66,12 @@
       align-items: center;
     }
     
-    .crop_logo {
+    .crop-logo {
+      object-fit: cover;
+      object-position: 100% 0;
+
       width: 2160px;
-      overflow: hidden;
+      height: 2160px;
     }
 
     /* Features */
@@ -135,7 +138,7 @@
     <ul id="slide-out" class="sidenav">
       <li><div class="user-view">
         <div class="background">
-          <img id="img" src="images/Channel Art.jpg" width="300" height="160">
+          <img id="img" src="images/golden-gate-bridge.png" width="300" height="160">
         </div>
         <a href="#user"><img id="img" class="circle crop_logo" src="images/logo-solid.jpg"></a>
         <a href="#name"><span class="white-text name">John Doe</span></a>
