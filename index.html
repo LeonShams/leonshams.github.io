@@ -90,7 +90,11 @@
       object-fit: cover;
     }
     
-    .no-hover {
+    .enable-points {
+      pointer-events: all;
+    }
+    
+    .disabe-pointers {
       pointer-events: none;
     }
 
@@ -153,13 +157,15 @@
           <li class="trans"><a href="/">Contact</a></li>
         </ul>
         <ul id="slide-out" class="sidenav">
-          <li class="no-hover"><div class="user-view">
+          <li class="disable-pointers"><div class="user-view">
             <div class="background">
               <img id="img" src="images/golden-gate-bridge.png" width="300" height="160" class="crop_sidenav_background">
             </div>
-            <a href="/"><img id="img" class="circle crop_logo" src="images/logo-solid.jpg"></a>
-            <a href="name"><span class="white-text name">Leon Shams</span></a>
-            <a href="email"><span class="white-text email">lshamsschaal@gmail.com</span></a>
+            <div class="enable-pointers">
+              <a href="/"><img id="img" class="circle crop_logo" src="images/logo-solid.jpg"></a>
+              <a href="name"><span class="white-text name">Leon Shams</span></a>
+              <a href="email"><span class="white-text email">lshamsschaal@gmail.com</span></a>
+            </div>
           </div></li>
           <li class="trans"><a href="/">Resume</a></li>
           <li class="trans"><a href="/">Projects</a></li>
