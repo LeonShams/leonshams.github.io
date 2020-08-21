@@ -84,12 +84,17 @@
       object-fit: cover;
     }
     
-    .crop_png_logo { 
+    .crop {
+      width: 123px;
+      height: 65px;
+      overflow: hidden;
+    }
+
+    .crop img {
       width: 65px;
       height: 65px;
-
-      background-size:cover;
-      background-position:50% 50%;
+      /* -(height change)/2 0 0 -(width change)/2 */
+      margin: 0 0 0 -58px;
     }
     
     .crop_sidenav_background {
