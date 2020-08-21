@@ -84,19 +84,6 @@
       object-fit: cover;
     }
     
-    .crop img {
-      width: 123px;
-      height: 65px;
-      /* -(height change)/2 0 0 -(width change)/2 */
-      margin: 0px 0px 0px -29px;
-    }
-    
-    .crop {
-      width: 65px;
-      height: 65px;
-      object-fit: cover;
-    }
-    
     .crop_sidenav_background {
       width: 300px;
       height: 160px;
@@ -154,9 +141,7 @@
     <nav>
       <div class="nav-wrapper">
         <a href="/" class="brand-logo hover_circle trans">
-          <div class="crop">
-            <img id="img" class="crop_png_logo pos_logo" src="images/logo.png">
-          </div>
+          <img id="img" class="pos_logo" src="images/logo.png" width="123" height="65">
         </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li class="trans"><a href="/">Resume</a></li>
