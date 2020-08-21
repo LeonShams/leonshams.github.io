@@ -69,7 +69,13 @@
     .crop_logo {
       width: 2160px;
       height: 2160px;
-      overflow: hidden;
+      object-fit: cover;
+    }
+    
+    .crop_sidenav_background {
+      width: 300px;
+      height: 160px;
+      object-fit: cover;
     }
 
     /* Features */
@@ -136,7 +142,7 @@
     <ul id="slide-out" class="sidenav">
       <li><div class="user-view">
         <div class="background">
-          <img id="img" src="images/golden-gate-bridge.png" width="300" height="160">
+          <img id="img" src="images/golden-gate-bridge.png" width="300" height="160" class="crop_sidenav_background">
         </div>
         <a href="#user"><img id="img" class="circle crop_logo" src="images/logo-solid.jpg"></a>
         <a href="#name"><span class="white-text name">John Doe</span></a>
