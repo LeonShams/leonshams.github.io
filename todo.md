@@ -1,5 +1,5 @@
 # Content
-- [ ] Links to resume, github, and linkedin
+- [x] Links to youtube, stackoverflow, github, and linkedin
 - [ ] Intro on homepage
 - [ ] Resume
 
@@ -9,5 +9,5 @@
 
 # Support
 - [x] Dropdown menu navbar for smaller displays and phones
-- [ ] Allow button images to shrink more for phones
+- [ ] Allow button images to shrink for phones
 - [ ] Force navbar min size to prevent weird animations on phones
