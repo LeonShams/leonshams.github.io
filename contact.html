@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    /* Navbar */
+    nav {
+      height: 65px !important;
+      line-height: 65px !important;
+      background-color: #D9D9D9 !important;
+    }
+
+    nav.nav-center ul {
+        text-align: center;
+    }
+    nav.nav-center ul li {
+        display: inline;
+        float: none;
+    }
+    nav.nav-center ul li a {
+        display: inline-block;
+    }
+
+    nav ul li,
+    nav ul li a,
+    .brand-logo{
+      font-size: 20px;
+      padding: 0px 100px 0px 100px;
+      color: black !important;
+      font-weight: 300;
+    }
+
+    nav.nav-center ul {
+      text-align: center;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav ul a:hover {
+      background-color: rgba(0, 0, 0, 0) !important;
+    }
+
+    nav ul li:hover {
+      background-color: rgba(0, 0, 0, 0.2) !important;
+      border-radius: 15px;
+    }
+    
+    nav ul li:active {
+      background-color: rgba(0, 0, 0, 0.5) !important;
+    }
+    
+    .sidenav-trigger {
+      margin: 0 !important;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: black !important;
+    }
+    
+    .sidenav-trigger:hover {
+      background-color: rgba(0, 0, 0, 0.2) !important;
+      border-radius: 50%;
+    }
+    
+    .sidenav-trigger:active {
+      background-color: rgba(0, 0, 0, 0.5) !important;
+    }
+    
+    .pos_logo {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+    
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .crop_logo {
+      width: 2160px;
+      height: 2160px;
+      object-fit: cover;
+    }
+    
+    .crop_sidenav_background {
+      width: 300px;
+      height: 160px;
+      object-fit: cover;
+    }
+    
+    .enable-pointers {
+      pointer-events: all;
+    }
+    
+    .disable-pointers {
+      pointer-events: none;
+    }
+    
+    .trans {
+      -webkit-transition: background 0.3s, border-radius 0.3s;
+      transition: background 0.3s, border-radius 0.3s;
+    }
+
+    .hover-rect {
+      line-height: 20px;
+    }
+
+    .hover-rect:hover {
+      height: 65;
+      background-color: rgba(0, 0, 0, 0.2) !important;
+      border-radius: 15px;
+    }
+    
+    .hover-rect:active {
+      background-color: rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .container a {
+      width: 850px;
+      height: 185px;
+      background: #adf;
+      border-radius: 32px;
+      position: relative;
+      top: 50px;
+    }
+
+    .circle:hover {
+      background: #fda;
+      border-radius: 128px;
+    }
+    
+    .circle:active {
+      background-color: #E6C89A;
+    }
+  </style>
+  
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="/" class="brand-logo hover-rect trans">
+          <img id="img" class="pos_logo" src="images/logo.png" width="123" height="65">
+        </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="trans"><a href="/">Resume</a></li>
+          <li class="trans"><a href="/">Projects</a></li>
+          <li class="trans"><a href="/contact">Contact</a></li>
+        </ul>
+        <ul id="slide-out" class="sidenav">
+          <li class="disable-pointers"><div class="user-view">
+            <div class="background">
+              <img id="img" src="images/golden-gate-bridge.png" width="300" height="160" class="crop_sidenav_background">
+            </div>
+            <a href="/"><img id="img" class="circle crop_logo" src="images/logo-solid.jpg"></a>
+            <a href="name"><span class="white-text name">Leon Shams</span></a>
+            <a href="email"><span class="white-text email">lshamsschaal@gmail.com</span></a>
+          </div></li>
+          <li class="trans"><a href="/">Resume</a></li>
+          <li class="trans"><a href="/">Projects</a></li>
+          <li class="trans"><a href="/contact">Contact</a></li>
+        </ul>
+        <a href="/" data-target="slide-out" class="sidenav-trigger trans"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </body>
+</html>
