@@ -171,5 +171,13 @@
         <a href="/contact" data-target="slide-out" class="sidenav-trigger trans"><i class="material-icons">menu</i></a>
       </div>
     </nav>
+    
+    <!--Side Nav Javascript-->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, {});
+      });      
+    </script>
   </body>
 </html>
