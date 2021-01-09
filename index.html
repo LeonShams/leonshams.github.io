@@ -15,19 +15,12 @@
   <title>Leon Shams</title>
 
   <style>
-    body {
-      background-color: #AEB6BF;
+    html {
+      scroll-behavior: smooth;
     }
 
-    p {
-      color: #353535;
-      padding-left: 150px;
-      padding-right: 150px;
-    }
-    
-    link-header {
-      font-size: 6em;
-      font-weight: bolder;
+    body {
+      background-color: #AEB6BF;
     }
 
     /* Prevent image dragging */
@@ -143,7 +136,7 @@
     }
 
     .nav-logo {
-      background-color: #1c3144;
+      background-color: #606c7a;
       color: transparent;
       font-size: calc(var(--nav-height)*0.75);
       line-height: var(--nav-height);
@@ -157,11 +150,13 @@
 
     .material-icons {
       width: 64px;
+      height: 64px;
+      line-height: 64px;
       color: #1c3144;
     }
 
     .icon-container {
-      background-color: #A3ACB6;
+      background-color: #bfc4ca;
       text-align: center;
       border-radius: 50%;
       box-shadow: inset 1px 2px 3px rgba(0,0,0,0.15);
@@ -210,15 +205,102 @@
 
     .neumorphic-text {
       color: #AEB6BF;
-      font-size: 10vw;
+      font-size: min(20.6vw, 170px);
       font-weight: bold;
-      line-height: 13vw;
+      line-height: min(24.24vw, 200px);
       width: 50vw;
       display: table-cell;
       vertical-align: middle;
       text-shadow:
-        12px 12px 16px rgba(0, 0, 0, 0.3),
-        -8px -8px 12px rgba(255, 255, 255, 0.3);
+        4px calc(min(0.97vw, 8px)) calc(min(1.45vw, 12px)) rgba(0, 0, 0, 0.2),
+        -2.5px calc(max(-0.6vw, -5px)) calc(min(0.97vw, 8px)) rgba(255, 255, 255, 0.25);
+    }
+
+    .contact-btn {
+      padding: 17px 65px 17px 65px;
+      color: white;
+      display: table;
+      margin-top: 30px;
+      margin-left: 15vw;
+      font-size: 16px;
+      font-weight: 250;
+      letter-spacing: 3px;
+      line-height: 1.15em;
+      background: linear-gradient(-45deg, #ba2a26, #dd4c30);
+      border-radius: 35px;
+      box-shadow:
+        calc(min(0.97vw, 8px)) calc(min(0.97vw, 8px)) calc(min(1.45vw, 12px)) rgba(0, 0, 0, 0.3),
+        calc(max(-0.6vw, -5px)) calc(max(-0.6vw, -5px)) calc(min(0.97vw, 8px)) rgba(255, 255, 255, 0.3),
+        inset 0 0 0 0 rgba(0, 0, 0, 0.3),
+        inset 0 0 0 0 rgba(255, 255, 255, 0.3);
+      -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    .contact-btn:hover {
+      box-shadow:
+        0 0 0 0 rgba(0, 0, 0, 0.3),
+        0 0 0 0 rgba(255, 255, 255, 0.3),
+        inset calc(min(0.72vw, 6px)) calc(min(0.72vw, 6px)) calc(min(1.21vw, 10px)) rgba(0, 0, 0, 0.3),
+        inset calc(max(-0.36vw, -3px)) calc(max(-0.36vw, -3px)) calc(min(0.72vw, 6px)) rgba(255, 255, 255, 0.3);
+    }
+    .contact-btn:active {
+      box-shadow:
+        0 0 0 0 rgba(0, 0, 0, 0.3),
+        0 0 0 0 rgba(255, 255, 255, 0.3),
+        inset calc(min(1.45vw, 12px)) calc(min(1.45vw, 12px)) calc(min(1.94vw, 16px)) rgba(0, 0, 0, 0.3),
+        inset calc(max(-0.97vw, -8px)) calc(max(-0.97vw, -8px)) calc(min(1.45vw, 12px)) rgba(255, 255, 255, 0.3);
+    }
+
+    @media only screen and (min-width: 1200px) {
+      #circle {
+        width: 10vw;
+        height: 10vw;
+        position: absolute;
+        background-color: #AEB6BF;
+        border-radius: 50%;
+        box-shadow:
+          inset calc(min(0.72vw, 6px)) calc(min(0.72vw, 6px)) calc(min(1.21vw, 10px)) rgba(0, 0, 0, 0.3),
+          inset calc(max(-0.36vw, -3px)) calc(max(-0.36vw, -3px)) calc(min(0.72vw, 6px)) rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    .down-arrow {
+      position: absolute;
+      left: calc(50vw - 32px);
+      top: 85vh;
+    }
+
+    #about {
+      background-color: #252733;
+      position: absolute;
+      top: 100vh;
+      min-height: 100vh;
+      width: 100%;
+      text-align: center;
+      color: #EAECEE;
+    }
+
+    .about-me-text {
+      font-size: calc(5vw + 30px);
+      font-weight: bold;
+      color: #252733;
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      marign-top: 0;
+      background: #f7f7f7;
+    }
+
+    .about-column-container {
+      display: flex;
+    }
+
+    .about-text {
+      font-size: calc(2vw + 10px);
+      font-weight: bold;
+      width: 60%;
+      margin-left: 5%;
+      margin-right: 45%;
     }
   </style>
 </head>
@@ -263,12 +345,41 @@
     </div>
   </nav>
   
-  <div class="text-container no-highlight">
-    <div class="neumorphic-text">Leon Shams</div>
+  <div class="no-highlight">
+
+    <!--Leon Shams text-->
+    <div class="text-container">
+      <div class="neumorphic-text">Leon Shams</div>
+    </div>
+    <a class="contact-btn" href="contact.html">Contact</a>
+
+    <!--Background design-->
+    <div id="circle" style="left: 73vw; top: calc(8vh + var(--nav-height));"></div>
+    <div id="circle" style="left: 67.12vw; top: calc(8vh + var(--nav-height) + 10vw);"></div>
+    <div id="circle" style="left: 78.88vw; top: calc(8vh + var(--nav-height) + 10vw);"></div>
+    <div id="circle" style="left: 66.23vw; top: calc(8vh + var(--nav-height) + 20.88vw); width: 23.54vw; border-radius: 10px;"></div>
+
+    <!--Down arrow-->
+    <a class="icon-container down-arrow" href="#about">
+      <i class="material-icons">arrow_downward</i>
+    </a>
+
   </div>
+
+  <section id="about">
+    <div class="about-me-text no-highlight">About Me</div>
+    <div class="about-column-container">
+      <p class="about-text">Here is my life story</p>
+
+    </div>
+  </section>
 </body>
 
+<!--Materialize.js-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<!--Jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
   // Sidenav
@@ -281,6 +392,25 @@
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.tooltipped');
     var instances = M.Tooltip.init(elems, {});
-  });    
+  });
+
+  // Scroll on click
+  $(document).ready(function(){
+    $("down-arrow").on('click', function(event) {
+
+      if (this.hash !== "") {
+        event.preventDefault();
+
+        var hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
 </script>
 </html>
